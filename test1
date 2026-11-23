@@ -1,0 +1,12 @@
+aurx = pd.read_csv("/Users/murad/Desktop/Karlov/Semester I/Python/my_stuff_env/AURX.csv")
+nova = pd.read_csv('/Users/murad/Desktop/Karlov/Semester I/Python/my_stuff_env/NOVA.csv')
+zeph = pd.read_csv('/Users/murad/Desktop/Karlov/Semester I/Python/my_stuff_env/ZEPH.csv')
+aurx["Ticker"]="Aurx"
+nova["Ticker"]="Nova"
+zeph["Ticker"]="Zeph"
+prices = pd.concat([aurx, nova, zeph])
+print(prices)
+print(aurx.shape)
+print(nova.shape)
+print(zeph.shape)
+print(prices.shape)
